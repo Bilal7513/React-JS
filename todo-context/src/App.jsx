@@ -21,7 +21,7 @@ import TodoItem from './components/TodoItem'
 
 function App() {
   const [todos, setTodos] = useState([])
-  const isInitialLoad = useRef(true); // isInitialLoad track kar raha hai
+  const isInitialLoad = useRef(true);
 
   const addTodo = (todo) => {
     setTodos((prev) => [...prev, {id: Date.now(), ...todo}])
